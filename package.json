@@ -1,0 +1,15 @@
+{
+  "name": "lit-ravine-57881",
+  "version": "1.0.0",
+  "description": "Week 09 Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/lit-ravine-57881.git"
+  },
+  "author": "Cal Wilson",
+  "license": "MIT"
+}
