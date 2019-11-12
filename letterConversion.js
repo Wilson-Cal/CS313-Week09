@@ -1,6 +1,7 @@
 const letterConversion = {
     letters_stamped: {
         name: "Letters (Stamped)",
+        maxWeight: 3.5,
         1: 0.55,
         2: 0.70,
         3: 0.85,
@@ -8,6 +9,7 @@ const letterConversion = {
     },
     letters_metered: {
         name: "Letters (Metered)",
+        maxWeight: 3.5,
         1: 0.50,
         2: 0.65,
         3: 0.80,
@@ -15,6 +17,7 @@ const letterConversion = {
     },
     large_envelopes_flats: {
         name: "Large Envelopes (Flats)",
+        maxWeight: 13,
         1: 1.00,
         2: 1.15,
         3: 1.30,
@@ -31,6 +34,7 @@ const letterConversion = {
     },
     first_class_package_service_retail: {
         name: "First-Class Package Service—Retail",
+        maxWeight: 3.5,
         1: 3.78,
         2: 3.78,
         3: 3.78,
