@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 
 const calculateRate = (req, res) => {
     const { weight, mail_type } = req.body;
-    const roundedWeight = Math.round(weight);
+    const roundedWeight = weight < 1 ? 1 : Math.round(weight);
     const maxWeight = letterConversion[mail_type].maxWeight;
     const price = roundedWeight > maxWeight ? letterConversion[mail_type][maxWeight].toFixed(2) : letterConversion[mail_type][roundedWeight].toFixed(2);
     const mail_name = letterConversion[mail_type].name;
