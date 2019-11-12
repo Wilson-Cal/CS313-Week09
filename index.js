@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const path = require("path");
 
 const letterConversion = require("./letterConversion.js");
@@ -8,8 +8,9 @@ const port = process.env.PORT || 5000;
 
 const calculateRate = (req, res) => {
     const { weight, mail_type } = req.body;
+    const roundedWeight = Math.round(weight);
     const maxWeight = letterConversion[mail_type].maxWeight;
-    const price = weight > maxWeight ? letterConversion[mail_type][maxWeight].toFixed(2) : letterConversion[mail_type][weight].toFixed(2);
+    const price = roundedWeight > maxWeight ? letterConversion[mail_type][maxWeight].toFixed(2) : letterConversion[mail_type][roundedWeight].toFixed(2);
     const mail_name = letterConversion[mail_type].name;
     res.render('pages/result.ejs', { price, weight, mail_name });
 }
