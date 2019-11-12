@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Postal Rate Calculator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Page Content goes here -->
+
+        <h1>Postal Rate Calculator</h1>
+        <div class="row">
+            <form class="col s12" action="/getRate" method="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">card_giftcard</i>
+                        <input id="weight" type="number" name="weight" class="validate" required>
+                        <label for="weight">Weight</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mail_outline</i>
+                        <select name="mail_type" required>
+                            <option value="" disabled selected></option>
+                            <option value="letters_stamped">Letters (Stamped)</option>
+                            <option value="letters_metered">Letters (Metered)</option>
+                            <option value="large_envelopes_flats">Large Envelopes (Flats)</option>
+                            <option value="first_class_package_service_retail">First-Class Package Service—Retail
+                            </option>
+                        </select>
+                        <label>Type of Mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/javascript/materialize.js"></script>
+    <script type="text/javascript" src="/javascript/main.js"></script>
+</body>
+
+</html>

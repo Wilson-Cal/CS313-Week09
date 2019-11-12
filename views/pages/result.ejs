@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Postal Rate Calculator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Postal Rate Calculator</h1>
+        <form class="col s12" action="/getRate" method="POST">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">card_giftcard</i>
+                    <input id="weight" type="text" value="<%= weight %>" required disabled>
+                    <label for="weight">Weight</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">card_giftcard</i>
+                    <input id="mail_name" type="text" value="<%= mail_name %>" required disabled>
+                    <label for="mail_name">Mail Type</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">card_giftcard</i>
+                    <input id="price" type="text" value="$<%= price %>" required disabled>
+                    <label for="price">Price</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="/javascript/materialize.js"></script>
+    <script type="text/javascript" src="/javascript/main.js"></script>
+</body>
+
+</html>

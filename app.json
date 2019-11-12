@@ -1,0 +1,12 @@
+{
+    "name": "Postal Rate Calculator",
+    "description": "A Postal Rate Calculator",
+    "repository": "https://git.heroku.com/lit-ravine-57881.git",
+    "logo": "",
+    "keywords": [
+        "node",
+        "express",
+        "heroku"
+    ],
+    "image": "heroku/nodejs"
+}
