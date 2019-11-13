@@ -34,7 +34,7 @@ const letterConversion = {
     },
     first_class_package_service_retail: {
         name: "First-Class Package Service—Retail",
-        maxWeight: 3.5,
+        maxWeight: 13,
         1: 3.78,
         2: 3.78,
         3: 3.78,
